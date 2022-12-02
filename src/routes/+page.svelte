@@ -4,4 +4,8 @@
         <h2>Day 1</h2>
         <h3>Calorie Counting</h3>
     </a>
+    <a href="/day2">
+        <h2>Day 2</h2>
+        <h3>Rock Paper Scissors</h3>
+    </a>
 </section>
