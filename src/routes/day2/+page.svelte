@@ -30,7 +30,7 @@
 <style>
 </style>
 
-<h1>Day x</h1>
+<h1>Day 2</h1>
 <label>
     <input type="checkbox" bind:checked={useSampleData}/>
     Use sample data

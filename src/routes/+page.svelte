@@ -8,4 +8,8 @@
         <h2>Day 2</h2>
         <h3>Rock Paper Scissors</h3>
     </a>
+    <a href="/day3">
+        <h2>Day 3</h2>
+        <h3>Rucksack Reorganization</h3>
+    </a>
 </section>
