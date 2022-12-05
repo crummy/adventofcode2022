@@ -1,3 +1,21 @@
+<style>
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 1em;
+        justify-content: space-between;
+    }
+
+    a {
+        min-width: 300px;
+        background-color: var(--primary-color);
+        padding: 1em;
+        color: black;
+        text-decoration: none;
+        box-shadow: 0 0 3px;
+    }
+</style>
+
 <h1>Advent of Code 2022</h1>
 <section>
     <a href="/day1">
