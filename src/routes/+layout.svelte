@@ -7,6 +7,23 @@ import {primary, secondary, tertiary} from "./colours";
     .container {
         margin: 0 auto;
         max-width: 800px;
+        border-radius: 4px;
+        padding: 1em;
+        position: relative;
+    }
+
+    :global(.container h1) {
+        margin-top: 0;
+    }
+
+    :global(.container label) {
+        border: 1px solid black;
+        box-shadow: 0 0 2px;
+        margin: 0.5em;
+        padding: 0.5em;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     :global(html) {
@@ -16,6 +33,6 @@ import {primary, secondary, tertiary} from "./colours";
     }
 </style>
 
-<div class="container" style={`--primary-color: ${primary}; --secondary-color: ${secondary}; --tertiary-color: ${tertiary}`}>
+<div class="container" style={`--primary-color: ${primary}; --secondary-color: ${secondary}; --tertiary-color: ${tertiary}; background-color: ${primary}`}>
 <slot/>
 </div>
