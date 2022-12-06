@@ -38,4 +38,8 @@
         <h2>Day 5</h2>
         <h3>Supply Stacks</h3>
     </a>
+    <a href="/day6">
+        <h2>Day 6</h2>
+        <h3>Tuning Trouble</h3>
+    </a>
 </section>
