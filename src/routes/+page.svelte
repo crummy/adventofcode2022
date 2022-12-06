@@ -34,4 +34,8 @@
         <h2>Day 4</h2>
         <h3>Camp Cleanup</h3>
     </a>
+    <a href="/day5">
+        <h2>Day 5</h2>
+        <h3>Supply Stacks</h3>
+    </a>
 </section>
