@@ -10,6 +10,12 @@ import {primary, secondary, tertiary} from "./colours";
         border-radius: 4px;
         padding: 1em;
         position: relative;
+        box-shadow: 0 0 16px;
+    }
+
+    h5 {
+        padding: 0;
+        margin: 0;
     }
 
     :global(.container h1) {
@@ -17,8 +23,6 @@ import {primary, secondary, tertiary} from "./colours";
     }
 
     :global(.container label) {
-        border: 1px solid black;
-        box-shadow: 0 0 2px;
         margin: 0.5em;
         padding: 0.5em;
         position: absolute;
@@ -34,5 +38,6 @@ import {primary, secondary, tertiary} from "./colours";
 </style>
 
 <div class="container" style={`--primary-color: ${primary}; --secondary-color: ${secondary}; --tertiary-color: ${tertiary}; background-color: ${primary}`}>
-<slot/>
+    <h5><a href="/">Back</a></h5>
+    <slot/>
 </div>
