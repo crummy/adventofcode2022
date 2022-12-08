@@ -42,4 +42,8 @@
         <h2>Day 6</h2>
         <h3>Tuning Trouble</h3>
     </a>
+    <a href="/day7">
+        <h2>Day 7</h2>
+        <h3>No Space Left On Device</h3>
+    </a>
 </section>
