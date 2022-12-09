@@ -2,7 +2,7 @@
     import sample from './sample.txt?raw'
     import input from './input.txt?raw'
 
-    let useSampleData = false
+    let useSampleData = true
 
 
 </script>

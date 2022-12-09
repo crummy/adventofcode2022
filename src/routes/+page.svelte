@@ -46,4 +46,8 @@
         <h2>Day 7</h2>
         <h3>No Space Left On Device</h3>
     </a>
+    <a href="/day8">
+        <h2>Day 8</h2>
+        <h3>Treetop Tree House</h3>
+    </a>
 </section>
