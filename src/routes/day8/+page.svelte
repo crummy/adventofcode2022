@@ -35,28 +35,41 @@
         const tree = grid[y][x]
 
         let treesToLeft = 0
-        for (let left = x - 1; left >= 0 && grid[y][left] < tree; --left) {
+        for (let left = x - 1; left >= 0; --left) {
             treesToLeft++
+            if (grid[y][left] >= tree) {
+                break
+            }
         }
 
         let treesToRight = 0
-        for (let right = x + 1; right < grid.length && grid[y][right] < tree; ++right) {
+        for (let right = x + 1; right < grid.length; ++right) {
             treesToRight++
+            if (grid[y][right] >= tree) {
+                break
+            }
         }
 
         let treesAbove = 0
-        for (let up = y - 1; up >= 0 && grid[up][x] < tree; --up) {
+        for (let up = y - 1; up >= 0; --up) {
             treesAbove++
+            if (grid[up][x] >= tree) {
+                break
+            }
         }
 
         let treesBelow = 0
-        for (let down = y + 1; down < grid[y].length && grid[down][x] < tree; ++down) {
+        for (let down = y + 1; down < grid[y].length; ++down) {
             treesBelow++
+            if (grid[down][x] >= tree) {
+                break
+            }
         }
-        const visibleFromLeft = treesToLeft == x;
-        const visibleFromRight = treesToRight == (grid.length - x - 1);
-        const visibleFromUp = treesAbove == y;
-        const visibleFromDown = treesBelow == (grid[x].length - y - 1);
+        const onBorder = x == 0 || x == grid[y].length - 1 || y == 0 || y == grid.length - 1
+        const visibleFromLeft = treesToLeft == x && grid[y][0] < tree
+        const visibleFromRight = treesToRight == (grid[y].length - x - 1) && grid[y][grid[y].length - 1] < tree
+        const visibleFromUp = treesAbove == y && grid[0][x] < tree;
+        const visibleFromDown = treesBelow == (grid.length - y - 1) && grid[grid.length - 1][x] < tree;
         return {
             height: tree,
             left: treesToLeft,
@@ -64,7 +77,7 @@
             up: treesAbove,
             down: treesBelow,
             score: treesToLeft * treesToRight * treesAbove * treesBelow,
-            visibleFromEdge: visibleFromLeft || visibleFromRight || visibleFromUp || visibleFromDown
+            visibleFromEdge: visibleFromLeft || visibleFromRight || visibleFromUp || visibleFromDown || onBorder
         }
     }
 </script>
