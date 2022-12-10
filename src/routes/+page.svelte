@@ -1,3 +1,17 @@
+<script type="ts">
+    const pages = {
+        "1": "Calorie Counting",
+        "2": "Rock Paper Scissors",
+        "3": "Rucksack Reorganization",
+        "4": "Camp Cleanup",
+        "5": "Supply Stacks",
+        "6": "Tuning Trouble",
+        "7": "No Space Left On Device",
+        "8": "Treetop Tree House",
+        "9": "Rope Bridge",
+    }
+</script>
+
 <style>
     section {
         display: flex;
@@ -18,36 +32,10 @@
 
 <h1>Advent of Code 2022</h1>
 <section>
-    <a href="/day1">
-        <h2>Day 1</h2>
-        <h3>Calorie Counting</h3>
-    </a>
-    <a href="/day2">
-        <h2>Day 2</h2>
-        <h3>Rock Paper Scissors</h3>
-    </a>
-    <a href="/day3">
-        <h2>Day 3</h2>
-        <h3>Rucksack Reorganization</h3>
-    </a>
-    <a href="/day4">
-        <h2>Day 4</h2>
-        <h3>Camp Cleanup</h3>
-    </a>
-    <a href="/day5">
-        <h2>Day 5</h2>
-        <h3>Supply Stacks</h3>
-    </a>
-    <a href="/day6">
-        <h2>Day 6</h2>
-        <h3>Tuning Trouble</h3>
-    </a>
-    <a href="/day7">
-        <h2>Day 7</h2>
-        <h3>No Space Left On Device</h3>
-    </a>
-    <a href="/day8">
-        <h2>Day 8</h2>
-        <h3>Treetop Tree House</h3>
-    </a>
+    {#each Object.entries(pages) as [day, title]}
+        <a href="/day{day}">
+            <h2>Day {day}</h2>
+            <h3>{title}</h3>
+        </a>
+    {/each}
 </section>

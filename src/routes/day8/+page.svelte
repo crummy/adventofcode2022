@@ -28,7 +28,6 @@
                 trees[`${x},${y}`] = getVisibility(x, y)
             }
         }
-        console.log(trees)
     }
 
     function getVisibility(x: number, y: number): View {
