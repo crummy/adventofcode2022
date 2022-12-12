@@ -6,7 +6,8 @@ import {primary, secondary, tertiary} from "./colours";
 <style>
     .container {
         margin: 0 auto;
-        max-width: 800px;
+        min-width: 800px;
+        width: fit-content;
         border-radius: 4px;
         padding: 1em;
         position: relative;
