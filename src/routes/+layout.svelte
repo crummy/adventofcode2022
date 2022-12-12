@@ -1,5 +1,6 @@
 <script>
-import {primary, secondary, tertiary} from "./colours";
+    import { base } from "$app/paths";
+    import {primary, secondary, tertiary} from "./colours";
 
 </script>
 
@@ -39,6 +40,6 @@ import {primary, secondary, tertiary} from "./colours";
 </style>
 
 <div class="container" style={`--primary-color: ${primary}; --secondary-color: ${secondary}; --tertiary-color: ${tertiary}; background-color: ${primary}`}>
-    <h5><a href="/">Back</a></h5>
+    <h5><a href="{base}/">Back</a></h5>
     <slot/>
 </div>

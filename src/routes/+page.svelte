@@ -1,4 +1,6 @@
 <script type="ts">
+    import { base } from "$app/paths";
+
     const pages = {
         "1": "Calorie Counting",
         "2": "Rock Paper Scissors",
@@ -35,7 +37,7 @@
 <h1>Advent of Code 2022</h1>
 <section>
     {#each Object.entries(pages) as [day, title]}
-        <a href="/day{day}">
+        <a href="{base}/day{day}">
             <h2>Day {day}</h2>
             <h3>{title}</h3>
         </a>

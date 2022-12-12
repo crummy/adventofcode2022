@@ -39,7 +39,6 @@
         "180": 180 * instructions.filter(i => i.cycle >= 180)[0].x,
         "220 ": 220 * instructions.filter(i => i.cycle >= 220)[0].x,
     }
-    $: console.log(xHistory)
     $: crtRows = xHistory.reduce((acc, element, i) => {
         const row = Math.floor(i / 40)
         const col = i % 40
