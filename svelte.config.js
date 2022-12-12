@@ -10,7 +10,7 @@ const config = {
     kit: {
         adapter: adapter(),
         paths: {
-            base: process.env.NODE_ENV === "production" ? "/gh-pages" : "",
+            base: process.env.NODE_ENV === "production" ? "/adventofcode2022" : "",
         },
     }
 };
