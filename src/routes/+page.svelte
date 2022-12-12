@@ -18,7 +18,8 @@
         display: flex;
         flex-wrap: wrap;
         grid-gap: 1em;
-        justify-content: space-between;
+        max-width: 800px;
+        justify-content: center;
     }
 
     a {
